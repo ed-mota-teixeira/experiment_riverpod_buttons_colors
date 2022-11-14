@@ -19,7 +19,7 @@ class MyButton extends ConsumerWidget {
 
     return MaterialButton(
       onPressed: () {
-        onPressed;
+        onPressed();
         // Sets this button ID as the current pressed button
         ref.read(buttonState.notifier).changeIt(id);
       },
